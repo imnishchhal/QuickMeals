@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "432740464406",
+    "firebase_url": "https://quick-meals-3e799.firebaseio.com",
+    "project_id": "quick-meals-3e799",
+    "storage_bucket": "quick-meals-3e799.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432740464406:android:2302caf23a09999c744237",
+        "android_client_info": {
+          "package_name": "com.example.quickmeals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432740464406-4uqp990pll0gbhrls9eakeirf1nsfn8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quickmeals",
+            "certificate_hash": "cf8d589cfcf067f406e2febbcdabde0a2547b618"
+          }
+        },
+        {
+          "client_id": "432740464406-0i8euuptvoml66781v00dlk4bj278o2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTlRK0fVadX1x8kNJ4T8BLwQtBfSRWDYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432740464406-0i8euuptvoml66781v00dlk4bj278o2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

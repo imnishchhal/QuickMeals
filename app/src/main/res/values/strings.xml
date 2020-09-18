@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quick Meals</string>
+    <string name="permission_rationale">Location Permission Should be  Granted</string>
+    <string name="location_cause">For Quick delivery service, please provide your address.</string>
+    <string name="landmarkHint">Landmark</string>
+    <string name="mobileHint">Mobile</string>
+    <string name="saveBtn">Save</string>
+    <string name="addRestaurantTitle">Fill Restaurant Details</string>
+    <string name="restaurantaddress">Address</string>
+    <string name="ownerName">Owner\'s Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="menu">SELECT YOUR CHOICE</string>
+    <string name="mItem">Burger</string>
+    <string name="mItemPizza">Pizza</string>
+    <string name="dosa">Dosa</string>
+    <string name="samosa">Samosa</string>
+    <string name="pavBaji">Pav Bhaji</string>
+</resources>
