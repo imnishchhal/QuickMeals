@@ -1,5 +1,4 @@
 package com.example.quickmeals
-
 data class MenuItem(var title: String)
 object  Supplier{
     val item = listOf<MenuItem>(

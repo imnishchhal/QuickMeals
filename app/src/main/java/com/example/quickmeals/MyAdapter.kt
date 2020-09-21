@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.quickmeals.Supplier.item
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class MyAdapter(val context: Context, item: List<MenuItem>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(val context: Context, item: MutableList<String>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false)
         return MyViewHolder(view, context)

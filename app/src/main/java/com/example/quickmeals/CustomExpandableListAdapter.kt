@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
+import android.widget.ExpandableListView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_select_menu_item.view.*
 import java.util.HashMap
@@ -63,6 +64,8 @@ class CustomExpandableListAdapter internal constructor(
                 this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             convertView = layoutInflater.inflate(R.layout.exp_list, null)
         }
+        var mExpandableListView: ExpandableListView = parent as ExpandableListView
+        mExpandableListView.expandGroup(listPosition)
         val listTitleTextView = convertView!!.findViewById<TextView>(R.id.listView)
         listTitleTextView.setTypeface(null, Typeface.BOLD)
         listTitleTextView.text = listTitle

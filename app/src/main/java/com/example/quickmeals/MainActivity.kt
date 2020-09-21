@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 val dashboardIntent = Intent(this, DashboardActivity::class.java)
                 startActivity(dashboardIntent)
                 finish()
-            }else {
+            } else {
                 val signInIntent = Intent(this, SignInActivity::class.java)
                 startActivity(signInIntent)
                 finish()

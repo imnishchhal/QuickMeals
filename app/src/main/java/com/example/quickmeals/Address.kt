@@ -7,17 +7,14 @@ import android.content.pm.PackageManager
 import android.location.Address
 import android.location.Geocoder
 import android.location.Location
-import android.nfc.Tag
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
 import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -25,7 +22,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.GeoPoint
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_dashboard.*
 import java.util.*
 
 class Address() : AppCompatActivity(){

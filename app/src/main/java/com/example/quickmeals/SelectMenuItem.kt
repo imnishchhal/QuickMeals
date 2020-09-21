@@ -5,6 +5,7 @@ import android.widget.ExpandableListAdapter
 import android.widget.ExpandableListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.iterator
 import com.example.quickmeals.ExpandableListData.data
 
 class SelectMenuItem : AppCompatActivity() {
@@ -21,9 +22,7 @@ class SelectMenuItem : AppCompatActivity() {
             titleList = ArrayList(listData.keys)
             adapter = CustomExpandableListAdapter(this, titleList as ArrayList<String>, listData)
             expandableListView!!.setAdapter(adapter)
-            for ( i in 1.rangeTo(expandableListView!!.getCount())) {
-                expandableListView!!.expandGroup(i)
-            }
+
             expandableListView!!.setOnGroupExpandListener { groupPosition ->
                 Toast.makeText(
                     applicationContext,
