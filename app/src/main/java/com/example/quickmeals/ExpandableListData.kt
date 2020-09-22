@@ -25,9 +25,9 @@ internal object ExpandableListData {
             myFavTennisPlayers.add("Andy Murray")
             myFavTennisPlayers.add("Novak Jokovic")
             myFavTennisPlayers.add("Sania Mirza")
-            expandableListDetail["CRICKET PLAYERS"] = myFavCricketPlayers
-            expandableListDetail["FOOTBALL PLAYERS"] = myFavFootballPlayers
-            expandableListDetail["TENNIS PLAYERS"] = myFavTennisPlayers
+            expandableListDetail["Burger"] = myFavCricketPlayers
+            expandableListDetail["Pizza"] = myFavFootballPlayers
+            expandableListDetail["Ice-Cream"] = myFavTennisPlayers
             return expandableListDetail
         }
 }
