@@ -33,9 +33,9 @@ class CustomExpandableListAdapter internal constructor(
         if (convertView == null) {
             val layoutInflater =
                 this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            convertView = layoutInflater.inflate(R.layout.exp_list, null)
+            convertView = layoutInflater.inflate(R.layout.exp_button, null)
         }
-        val expandedListTextView = convertView!!.findViewById<TextView>(R.id.listView)
+        val expandedListTextView = convertView!!.findViewById<TextView>(R.id.listTitleView)
         expandedListTextView.text = expandedListText
         return convertView
     }

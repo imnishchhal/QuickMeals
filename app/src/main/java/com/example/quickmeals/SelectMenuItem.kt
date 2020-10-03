@@ -2,6 +2,7 @@ package com.example.quickmeals
 
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
 import android.widget.ExpandableListAdapter
 import android.widget.ExpandableListView
 import android.widget.Toast
@@ -41,9 +42,10 @@ class SelectMenuItem : AppCompatActivity() {
                         .addOnSuccessListener {
                             val mutMlist = mutableListOf<String>()
                             for (docu in it){
+                                Log.d("impi", docu.get("price").toString())
                                 mutMlist.add(docu.id)
                             }
-                            menuLast.put(ld,mutMlist)
+                            menuLast.put(ld.toString().toUpperCase(),mutMlist)
                             if (expandableListView != null) {
                                 titleList = ArrayList(menuLast.keys)
                                 adapter = CustomExpandableListAdapter(this, titleList as ArrayList<String>, menuLast)
@@ -85,5 +87,10 @@ class SelectMenuItem : AppCompatActivity() {
                 Log.d("error", "data not found")
             }
         }
+    }
+
+    fun OnCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
     }
 }

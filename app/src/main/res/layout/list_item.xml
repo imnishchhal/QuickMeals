@@ -9,33 +9,31 @@
     android:layout_marginTop="5dp"
     card_view:cardCornerRadius="5dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white"
-        android:baselineAligned="false"
-        android:orientation="vertical"
-        android:padding="5dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/txvTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:text="Title"
-            android:textColor="#616161"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-
-        <ImageView
+            <ImageView
             android:id="@+id/imgShare"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:src="@android:drawable/ic_menu_share"
-            android:tint="#eeeeee"/>
-
-    </LinearLayout>
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hamburger"
+            />
+            <TextView
+            android:id="@+id/txvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imgShare"
+            android:layout_alignTop="@id/imgShare"
+            android:layout_alignRight="@id/imgShare"
+            android:layout_alignBottom="@id/imgShare"
+            android:text="Title"
+            android:layout_margin="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="bottom"/>
+        </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

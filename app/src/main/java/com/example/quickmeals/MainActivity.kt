@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
         if (isLocationEnabled(this)) {
             if(FirebaseAuth.getInstance().currentUser != null){
-                val dashboardIntent = Intent(this, DashboardActivity::class.java)
+                val dashboardIntent = Intent(this, HomeMain::class.java)
                 startActivity(dashboardIntent)
                 finish()
             } else {

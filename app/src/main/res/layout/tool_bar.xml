@@ -1,0 +1,10 @@
+<androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    app:navigationIcon="@drawable/ic_baseline_menu_24"
+    app:title="Quick Meals"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:titleMarginStart="40dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+</androidx.appcompat.widget.Toolbar>
